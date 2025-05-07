@@ -16,5 +16,3 @@ again: 0.033580
 it: 0.031655
 more: 0.031304
 but: 0.028974
-carefully: 0.028974
-requested: 0.028974
