@@ -1,0 +1,14 @@
+digraph G {
+	graph [nodesep=0.5, ranksep=1.5, overlap=false, splines=true];
+	node [shape=circle, width=0.4, height=0.4, fontsize=8];
+	edge [fontsize=8];
+	the [label="the"];
+	scientist [label="scientist"];
+	analyzed [label="analyzed"];
+	it [label="it"];
+	so [label="so"];
+	so -> the [label="1", color="red", penwidth=2];
+	the -> scientist [label="2", color="red", penwidth=2];
+	scientist -> analyzed [label="1", color="red", penwidth=2];
+	analyzed -> it [label="1", color="red", penwidth=2];
+}

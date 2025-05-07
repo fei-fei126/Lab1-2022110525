@@ -1,0 +1,20 @@
+PageRank结果(从高到低):
+the: 0.191178
+report: 0.087702
+data: 0.079079
+analyzed: 0.058776
+scientist: 0.052470
+team: 0.052470
+shared: 0.044036
+with: 0.043949
+and: 0.043949
+detailed: 0.041455
+a: 0.040916
+wrote: 0.040281
+so: 0.040281
+again: 0.033580
+it: 0.031655
+more: 0.031304
+but: 0.028974
+carefully: 0.028974
+requested: 0.028974
