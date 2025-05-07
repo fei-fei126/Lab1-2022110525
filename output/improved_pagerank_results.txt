@@ -1,5 +1,4 @@
 PageRank结果(从高到低):
-the: 0.191178
 report: 0.087702
 data: 0.079079
 analyzed: 0.058776
@@ -18,3 +17,4 @@ more: 0.031304
 but: 0.028974
 carefully: 0.028974
 requested: 0.028974
+ok
