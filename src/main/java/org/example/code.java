@@ -546,11 +546,13 @@ public class code {
     }
 
     public Map<String, Double> calculatePageRank(double dampingFactor, int iterations) {
+        if (directedGraph.isEmpty() || iterations <= 0) {
+            return Collections.emptyMap();
+        }
         // 初始化PR值
         Map<String, Double> pageRank = new HashMap<>();
         int N = directedGraph.size();
         double initialValue = 1.0 / N;
-
         // 所有节点初始PR值为1/N
         for (String node : directedGraph.keySet()) {
             pageRank.put(node, initialValue);
