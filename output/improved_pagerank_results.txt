@@ -1,5 +1,4 @@
 PageRank结果(从高到低):
-report: 0.087702
 data: 0.079079
 analyzed: 0.058776
 scientist: 0.052470
