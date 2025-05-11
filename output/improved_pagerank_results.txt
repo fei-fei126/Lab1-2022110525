@@ -18,4 +18,3 @@ more: 0.031304
 but: 0.028974
 carefully: 0.028974
 requested: 0.028974
-world
