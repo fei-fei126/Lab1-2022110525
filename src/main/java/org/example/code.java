@@ -549,6 +549,7 @@ public class code {
         if (directedGraph.isEmpty() || iterations <= 0) {
             return Collections.emptyMap();
         }
+        //
         // 初始化PR值
         Map<String, Double> pageRank = new HashMap<>();
         int N = directedGraph.size();
