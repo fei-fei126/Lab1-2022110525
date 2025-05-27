@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
-public class code {
+public class Code1 {
     private final Map<String, Map<String, Integer>> directedGraph;
     private volatile boolean stopWalk = false;
     private final CountDownLatch latch = new CountDownLatch(1);
@@ -17,14 +17,14 @@ public class code {
     private String[] allWords;
     private String root;
 
-    public code() {
+    public Code1() {
         directedGraph = new HashMap<>();
     }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             try {
-                new code().createAndShowGUI();
+                new Code1().createAndShowGUI();
             } catch (Exception e) {
                 e.printStackTrace();
             }

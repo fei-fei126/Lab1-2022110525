@@ -17,7 +17,7 @@ digraph G {
 	scientist -> carefully [label="1"];
 	scientist -> analyzed [label="1"];
 	more [label="more"];
-	more -> data [label="1"];
+	more -> requested [label="1"];
 	wrote [label="wrote"];
 	wrote -> a [label="1"];
 	again [label="again"];
@@ -37,6 +37,7 @@ digraph G {
 	with [label="with"];
 	with -> the [label="1"];
 	requested [label="requested"];
+	requested -> data [label="1"];
 	requested -> more [label="1"];
 	detailed [label="detailed"];
 	detailed -> report [label="1"];
