@@ -3,10 +3,18 @@ digraph G {
 	node [shape=circle, width=0.4, height=0.4, fontsize=8];
 	edge [fontsize=8];
 	the [label="the"];
-	data [label="data"];
+	a [label="a"];
+	with [label="with"];
+	requested [label="requested"];
+	detailed [label="detailed"];
+	more [label="more"];
 	report [label="report"];
-	so [label="so"];
-	data -> so [label="1", color="red", penwidth=2];
-	so -> the [label="1", color="red", penwidth=2];
-	the -> report [label="1", color="red", penwidth=2];
+	team [label="team"];
+	a -> detailed [label="1", color="red", penwidth=2];
+	detailed -> report [label="1", color="red", penwidth=2];
+	report -> with [label="1", color="red", penwidth=2];
+	with -> the [label="1", color="red", penwidth=2];
+	the -> team [label="2", color="red", penwidth=2];
+	team -> requested [label="1", color="red", penwidth=2];
+	requested -> more [label="1", color="red", penwidth=2];
 }

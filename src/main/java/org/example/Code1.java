@@ -480,22 +480,16 @@ public class Code1 {
 
     public List<List<Object>> calcShortestPath(String word1, String word2, int i, String root) {
         outputArea.append("计算从 " + word1 + " 到 " + word2 + " 的最短路径\n");
-
-        //path：用于存储当前路径的节点。
-        //visited：用于记录已经访问过的节点，防止重复访问。
         List<String> path = new ArrayList<>();
         Set<String> visited = new HashSet<>();
         List<List<Object>> allPaths = findAllPaths(word1, word2, visited, path, 0);
-
         if (allPaths.isEmpty()) {
             outputArea.append(word1 + " 和 " + word2 + " 之间没有路径\n");
             return null;
         }
-
         outputArea.append(word1 + " 和 " + word2 + " 之间的路径:\n");
         int minLength = Integer.MAX_VALUE;
         for (List<Object> p : allPaths) {
-            //遍历 allPaths，提取每条路径的长度
             int length = (int) p.get(1);
             if (length < minLength) {
                 minLength = length;
@@ -510,13 +504,11 @@ public class Code1 {
                 shortestPaths.add(p);
             }
         }
-
         String dotFilePath = "./output/shortest/directed_graph_shortest" + i + ".dot";
         String imageFilePath = "./output/shortest/directed_graph_shortest" + i + ".png";
         createDotFile(dotFilePath, shortestPaths, root);
         convertDotToImage(dotFilePath, imageFilePath);
         outputArea.append("最短路径图已保存到: " + imageFilePath + "\n");
-
         return shortestPaths;
     }
 
